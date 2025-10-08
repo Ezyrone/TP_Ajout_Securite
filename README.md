@@ -23,7 +23,7 @@ Ensuite, ouvrez [http://localhost:3000](http://localhost:3000), créez un compte
 - `login.html` : connexion (redirige vers le tableau si une session existe déjà).
 - `dashboard.html` : gestion des Post-it, renvoie vers la connexion si le token est manquant ou expiré.
 
-### À tester rapidement
+### À tester 
 
 - Tenter une création/modification/suppression de note sans être connecté (doit échouer).
 - Créer deux comptes différents et vérifier qu’ils ne peuvent pas éditer les notes de l’autre (`403` attendu).
