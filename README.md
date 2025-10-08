@@ -6,7 +6,7 @@ Une appli temps réel Express + Socket.IO, avec un front HTML/CSS/JS simple et d
 
 ```bash
 npm install
-JWT_SECRET="changez-moi" npm start
+npm start
 ```
 
 Ensuite, ouvrez [http://localhost:3000](http://localhost:3000), créez un compte, connectez-vous, et ajoutez votre première note. Lancez un second onglet pour voir la synchro instantanée.
