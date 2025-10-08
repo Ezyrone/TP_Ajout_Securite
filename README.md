@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 
-Ensuite, ouvrez [http://localhost:3000](http://localhost:3000), créez un compte, connectez-vous, et écrivez votre première note. Ouvrez un deuxième onglet pour voir la synchro instantanée.
+Ensuite, ouvrez [http://localhost:3000], créez un compte, connectez-vous, et écrivez votre première note. Ouvrez un deuxième onglet pour voir la synchro instantanée.
 
 ### Ce qui est protégé
 
