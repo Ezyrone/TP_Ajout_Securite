@@ -17,3 +17,6 @@ Ensuite, ouvrez [http://localhost:3000], créez un compte, connectez-vous, et é
 - Chaque note porte l’ID de son auteur ; seuls ses boutons sont actifs pour lui.
 - Toutes les requêtes sensibles passent par un middleware qui vérifie le JWT.
 
+
+
+Jory GRZESZCZAK - M2 AL - ESGI Grenoble
