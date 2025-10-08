@@ -57,6 +57,33 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ghost-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(148, 163, 209, 0.4);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  background: rgba(15, 23, 42, 0.45);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ghost-button:hover {
+  border-color: rgba(124, 58, 237, 0.7);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 40px -22px rgba(124, 58, 237, 0.65);
+}
+
 #auth-status {
   display: flex;
   align-items: center;
@@ -88,6 +115,24 @@ main {
   display: grid;
   gap: clamp(1.5rem, 3vw, 2.5rem);
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.auth-page {
+  width: min(450px, 95%);
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+}
+
+.auth-page .panel {
+  gap: 1.25rem;
+}
+
+.auth-page form {
+  gap: 1rem;
+}
+
+.dashboard-page {
+  grid-template-columns: 1fr;
 }
 
 .panel {
@@ -196,6 +241,20 @@ button[type='submit']:disabled {
   font-size: 0.9rem;
   color: var(--danger);
   font-weight: 500;
+}
+
+.alt-link {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.alt-link a {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+.alt-link a:hover {
+  text-decoration: underline;
 }
 
 #notes-list {

@@ -3,77 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tableau collaboratif sécurisé</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Redirection…</title>
+    <meta http-equiv="refresh" content="0; url=login.html" />
+    <script>
+      window.location.replace('login.html');
+    </script>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        place-items: center;
+        font-family: system-ui, sans-serif;
+        background: #05060f;
+        color: #e2e8f0;
+        min-height: 100vh;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Tableau de notes collaboratif</h1>
-      <div id="auth-status">
-        <span id="current-user">Non connecté</span>
-        <button id="logout-btn" hidden>Déconnexion</button>
-      </div>
-    </header>
-
-    <main>
-      <section class="panel" id="auth-panel">
-        <h2>Authentification</h2>
-        <div class="forms">
-          <form id="register-form">
-            <h3>Inscription</h3>
-            <label>
-              Nom d'utilisateur
-              <input type="text" id="register-username" required />
-            </label>
-            <label>
-              Mot de passe
-              <input type="password" id="register-password" required />
-            </label>
-            <button type="submit">Créer un compte</button>
-            <p class="feedback" id="register-feedback"></p>
-          </form>
-
-          <form id="login-form">
-            <h3>Connexion</h3>
-            <label>
-              Nom d'utilisateur
-              <input type="text" id="login-username" required />
-            </label>
-            <label>
-              Mot de passe
-              <input type="password" id="login-password" required />
-            </label>
-            <button type="submit">Se connecter</button>
-            <p class="feedback" id="login-feedback"></p>
-          </form>
-        </div>
-      </section>
-
-      <section class="panel" id="note-panel">
-        <h2>Notes</h2>
-        <form id="create-note-form">
-          <label for="note-content">Nouvelle note</label>
-          <textarea id="note-content" placeholder="Votre note..." required></textarea>
-          <button type="submit">Ajouter</button>
-          <p class="feedback" id="note-feedback"></p>
-        </form>
-
-        <ul id="notes-list"></ul>
-      </section>
-    </main>
-
-    <template id="note-template">
-      <li class="note">
-        <div class="note-content"></div>
-        <div class="note-meta"></div>
-        <div class="note-actions">
-          <button class="edit-btn">Modifier</button>
-          <button class="delete-btn">Supprimer</button>
-        </div>
-      </li>
-    </template>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="app.js" type="module"></script>
+    <p>Redirection vers la page de connexion…</p>
   </body>
 </html>

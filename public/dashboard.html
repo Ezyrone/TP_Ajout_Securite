@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau de notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tableau collaboratif</h1>
+      <div id="auth-status">
+        <span id="current-user">Connexion en cours…</span>
+        <button id="logout-btn">Déconnexion</button>
+      </div>
+    </header>
+
+    <main class="dashboard-page">
+      <section class="panel">
+        <h2>Vos notes</h2>
+        <form id="create-note-form">
+          <label for="note-content">Nouvelle note</label>
+          <textarea id="note-content" placeholder="Partagez vos idées…" required></textarea>
+          <button type="submit">Ajouter</button>
+          <p class="feedback" id="note-feedback"></p>
+        </form>
+
+        <ul id="notes-list"></ul>
+      </section>
+    </main>
+
+    <template id="note-template">
+      <li class="note">
+        <div class="note-content"></div>
+        <div class="note-meta"></div>
+        <div class="note-actions">
+          <button class="edit-btn">Modifier</button>
+          <button class="delete-btn">Supprimer</button>
+        </div>
+      </li>
+    </template>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/dashboard.js" type="module"></script>
+  </body>
+</html>

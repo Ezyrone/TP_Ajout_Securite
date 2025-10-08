@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription – Tableau collaboratif</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tableau collaboratif</h1>
+      <nav class="header-actions">
+        <a class="ghost-button" href="login.html">J'ai déjà un compte</a>
+      </nav>
+    </header>
+
+    <main class="auth-page">
+      <section class="panel">
+        <h2>Inscription</h2>
+        <form id="register-form" autocomplete="on">
+          <label>
+            Nom d'utilisateur
+            <input type="text" id="register-username" autocomplete="username" required />
+          </label>
+          <label>
+            Mot de passe
+            <input type="password" id="register-password" autocomplete="new-password" required />
+          </label>
+          <button type="submit">Créer un compte</button>
+          <p class="feedback" id="register-feedback"></p>
+          <p class="alt-link">
+            Déjà membre ?
+            <a href="login.html">Connectez-vous</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/register.js" type="module"></script>
+  </body>
+</html>
